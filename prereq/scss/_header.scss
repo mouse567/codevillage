@@ -1,0 +1,91 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 68px 0 0 77px;
+    line-height: 42px;
+    white-space: nowrap;
+    @include sp{
+        height: 70px;
+        padding: 0 20px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+    }
+    .title{
+        font-size: 38px;
+        font-family: "Roboto Mono for Powerline";
+        height: 38px;
+        @include sp{
+            font-size: 2.2rem;
+        }
+        }
+    }
+    nav {
+        font-size: 1.8rem;
+        height: 42px;
+        line-height: 42px;
+        @include sp{
+            display: none;
+        }
+    }
+
+header a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #707070;
+    @include sp{
+        display: none;
+    }
+    }
+
+.ham{
+    @include sp{
+        width: 16px;
+        height: 14px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        span{
+            width: 16px;
+            height: 2px;
+            background-color: #3B4043;
+            display: inline-block;
+            &:last-child{
+                width: 12px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

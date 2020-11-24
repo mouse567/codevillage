@@ -1,0 +1,82 @@
+@mixin pc {
+    @media (max-width: 960px){
+        @content ;
+    }
+}
+
+@mixin sp {
+    @media (max-width: 375px){
+        @content ;
+    }
+}
+
+
+// -----------------共通------------------
+
+
+html {
+    font-size: 62.5%;  //-----10px----
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.inner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 260px 0 70px 0;
+    max-width: 1500px;
+    @include sp{
+        padding: 60px 0 63px 0;
+        width: 95%;
+    }
+}
+
+.first-header{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.text-title {
+    color: #707070;
+    font-size: 1.8rem;
+    .title-border{
+    display: flex;
+    align-items:center;
+    }
+        .title-border::after{
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #707070;
+        width: 99px;
+        height: 1px;
+        margin-left: 22.5px;
+        @include sp{
+            width: 44px;
+        }
+    } 
+}
+
+.wrap{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
