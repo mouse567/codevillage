@@ -1,0 +1,100 @@
+.concept {
+    background:linear-gradient(180deg,#A193861F 0%,#A193861F 403px,#A1938689 100px,#A1938689 100%);
+
+    @include sp{
+        background:linear-gradient(180deg,#A193861F 0,#A193861F 176px,#A1938689 176px,#A1938689 100%);
+        .inner{
+            width: 90%;
+            
+        }
+    }
+}
+.concept{
+        .inner{
+        padding: 256px 0 70px 0;
+        @include sp{
+            padding: 60px 0 63px 0;
+        }
+    }
+}
+
+.concept-img{
+    display: flex;
+    margin-top: 11px;
+    @include sp{
+        margin-top: 50px;
+        
+    }
+    &-2{
+        background-image: url(../img/component2.png);
+        width: 65%;
+        background-size: cover;
+        height: 413px;
+            @include sp{
+                width: 50%;
+                background-position: 75%,50%;
+                background-repeat: no-repeat;
+                height: 205px;
+    }
+    }
+    &-3{
+        background-image: url(../img/component3.png);
+        margin-left: 7px;
+        width: 35%;
+        height: 413px;
+        background-size: cover;
+            @include sp{
+                width: 50%;
+                height: 205px;
+    }
+    }
+}
+
+
+
+
+.concept-item{
+    display: flex;
+    margin-top: 92px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    @include sp{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title{
+        width: 445px;
+        font-size: 38px;
+        font-family: 'Noto Serif JP', serif;
+        @include sp{
+            width: 200px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    }
+    
+    &-text{
+        width: 45%;
+        font-size: 1.6rem;
+        @include sp{
+            width: 100%;
+            margin-top: 18px;
+        }
+    }
+}
+
+.first-v-copy{
+    @include sp{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
