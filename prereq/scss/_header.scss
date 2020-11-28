@@ -6,7 +6,7 @@ header {
     padding: 68px 0 0 77px;
     line-height: 42px;
     white-space: nowrap;
-    @include sp{
+    @include tab{
         height: 70px;
         padding: 0 20px;
         width: 100%;
@@ -20,8 +20,10 @@ header {
         font-size: 38px;
         font-family: "Roboto Mono for Powerline";
         height: 38px;
-        @include sp{
+        letter-spacing: 3.8px;
+        @include tab{
             font-size: 2.2rem;
+            letter-spacing: 2.2px;
         }
         }
     }
@@ -29,7 +31,7 @@ header {
         font-size: 1.8rem;
         height: 42px;
         line-height: 42px;
-        @include sp{
+        @include tab{
             display: none;
         }
     }
@@ -45,13 +47,14 @@ nav li {
     display: inline-block;
     margin-left: 20px;
     color: #707070;
-    @include sp{
+    letter-spacing: 1.8px;
+    @include tab{
         display: none;
     }
     }
 
 .ham{
-    @include sp{
+    @include tab{
         width: 16px;
         height: 14px;
         display: flex;
