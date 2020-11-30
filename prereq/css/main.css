@@ -166,6 +166,10 @@ body {
   overflow: hidden;
 }
 
+.container {
+  display: none;
+}
+
 .first-v-wrap {
   width: 100%;
   display: flex;
@@ -218,11 +222,18 @@ body {
 @media (max-width: 899px) {
   .first-v-wrap-sp {
     display: flex;
-    background-image: url("../img-sp/sp1.png");
+    background-image: url("../img/component1.png");
     height: 100vh;
     background-size: cover;
     object-position: 50px 50px;
   }
+}
+@media (max-width: 899px) and (max-width: 550px) {
+  .first-v-wrap-sp {
+    background-image: url("../img-sp/sp1.png");
+  }
+}
+@media (max-width: 899px) {
   .first-v-wrap-sp .first-v-title {
     margin-top: 450px;
     width: 100%;
@@ -305,11 +316,6 @@ nav li {
   margin-left: 20px;
   color: #707070;
   letter-spacing: 1.8px;
-}
-@media (max-width: 899px) {
-  nav li {
-    display: none;
-  }
 }
 
 @media (max-width: 899px) {

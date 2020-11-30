@@ -48,9 +48,6 @@ nav li {
     margin-left: 20px;
     color: #707070;
     letter-spacing: 1.8px;
-    @include tab{
-        display: none;
-    }
     }
 
 .ham{

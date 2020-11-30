@@ -1,3 +1,7 @@
+.container{
+    display: none;
+}
+
 .first-v-wrap {
     width: 100%;
     display: flex;
@@ -42,10 +46,13 @@
     display: none;
     @include tab{
         display: flex;
-        background-image: url("../img-sp/sp1.png");
+        background-image: url("../img/component1.png");
         height: 100vh;
         background-size: cover;
         object-position: 50px 50px;
+    @include sp{
+        background-image: url("../img-sp/sp1.png");
+    }
         .first-v-title{
             margin-top: 450px;
             width: 100%;
