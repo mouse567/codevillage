@@ -1,0 +1,68 @@
+.store{
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        @include tab{
+            flex-direction: column;
+            width: 85%;
+        }
+    }
+}
+
+.map{
+    height: 300px;
+    width: 100%;
+    margin-left: 50px;
+    @include tab{
+        width: 100%;
+        margin-left: 0;
+        height: 200px;
+    }
+}
+
+.googlemap{
+    height: 100%;
+    width: 100%;
+}
+
+th{
+    text-align: left;
+}
+
+.store-info{
+    line-height: 2.0;
+    white-space: nowrap;
+    @include tab{
+        width: 100%;
+    }
+    @include small{
+        white-space: normal;
+    }
+}
+
+.border{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    @include sp{
+        letter-spacing: normal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

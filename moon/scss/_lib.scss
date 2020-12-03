@@ -1,0 +1,129 @@
+$imgwidth: 100%;
+$imgheight: 20px;
+
+
+
+
+
+
+// --------------スマホ対応---------------------
+
+@mixin large {
+    @media (min-width: 1200px){
+        @content ;
+    }
+}
+
+@mixin tab {
+    @media (max-width: 800px){
+        @content ;
+    }
+}
+
+@mixin tabsp {
+    @media screen and(max-width: 580px){
+        @content ;
+    }
+}
+
+@mixin sp {
+    @media screen and(max-width: 500px){
+        @content ;
+    }
+}
+
+@mixin small {
+    @media screen and(max-width: 370px){
+        @content ;
+    }
+}
+
+// --------------共通-----------------
+
+html {
+  font-size: 62.5%;
+}
+
+//  全体body
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Noto Serif JP', serif!important;
+}
+
+.menu{
+  position:sticky;
+  top: 0;
+  z-index:500;
+}
+
+nav{
+  
+  height: 10vh;
+  background-color: black;
+}
+
+.link{
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.moon{
+  width: 100vw;
+  height: 100%;
+}
+
+.ttl{
+  border-bottom: 1px solid black;
+  @include tab{
+  }
+}
+
+.inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  max-width: 1500px;
+}
+
+.wrap{
+  overflow: hidden;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

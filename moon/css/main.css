@@ -1,0 +1,547 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Noto Serif JP", serif !important;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+nav {
+  height: 10vh;
+  background-color: black;
+}
+
+.link {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.moon {
+  width: 100vw;
+  height: 100%;
+}
+
+.ttl {
+  border-bottom: 1px solid black;
+}
+
+.inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  max-width: 1500px;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+header {
+  height: 300px;
+  background-color: #222222;
+  position: relative;
+}
+@media (max-width: 800px) {
+  header {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 580px) {
+  header {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 370px) {
+  header {
+    height: 220px;
+  }
+}
+
+.title {
+  font-size: 8.0rem;
+  color: yellow;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 6.0rem;
+    right: 1%;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .title {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    top: 20%;
+    right: 5%;
+  }
+}
+
+.moon-header {
+  height: 300px;
+}
+@media (max-width: 800px) {
+  .moon-header {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .moon-header {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moon-header {
+    height: 250px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .moon-header {
+    height: 220px;
+  }
+}
+
+li {
+  font-size: 2.0rem;
+  color: white;
+}
+li:hover {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 800px) {
+  .buns, .patty {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburgerMenu {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .link {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+
+  .open {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+  }
+}
+.store .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .store .inner {
+    flex-direction: column;
+    width: 85%;
+  }
+}
+
+.map {
+  height: 300px;
+  width: 100%;
+  margin-left: 50px;
+}
+@media (max-width: 800px) {
+  .map {
+    width: 100%;
+    margin-left: 0;
+    height: 200px;
+  }
+}
+
+.googlemap {
+  height: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.store-info {
+  line-height: 2.0;
+  white-space: nowrap;
+}
+@media (max-width: 800px) {
+  .store-info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .store-info {
+    white-space: normal;
+  }
+}
+
+.border {
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 500px) {
+  .border {
+    letter-spacing: normal;
+  }
+}
+
+.gallery .inner {
+  width: 90%;
+  padding-top: 50px;
+}
+@media screen and (max-width: 500px) {
+  .gallery .inner {
+    width: 75%;
+  }
+}
+
+.box .ttl {
+  margin-bottom: 40px;
+}
+
+.gallery-img-sp {
+  display: none;
+}
+@media (max-width: 800px) {
+  .gallery-img-sp {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 580px) {
+  .gallery-img-sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery-img-sp {
+    display: none;
+  }
+}
+
+.img {
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .img {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .img {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .img {
+    height: 200px;
+  }
+}
+
+.img2, .img3 {
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .img2, .img3 {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+}
+
+.left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 45%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .img2:nth-child(1) {
+    width: 150px;
+  }
+
+  .img2:nth-child(2) {
+    width: 150px;
+  }
+
+  .img3:nth-child(3) {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .img1:nth-child(1) {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  img:nth-child(3) {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .img:nth-child(6) {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.menulist .inner {
+  width: 90%;
+}
+@media (max-width: 800px) {
+  .menulist .inner {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menulist .inner {
+    width: 95%;
+  }
+}
+
+.menuimg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media (max-width: 800px) {
+  .menuimg {
+    flex-direction: column;
+  }
+}
+
+.soft {
+  width: 48%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .soft {
+    width: 100%;
+  }
+}
+
+.wine {
+  width: 48%;
+  height: 100%;
+  margin-left: 10px;
+}
+@media (max-width: 800px) {
+  .wine {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+
+.info {
+  background-color: #1f1f1f;
+}
+.info .inner {
+  width: 90%;
+  color: white;
+  padding-bottom: 30px;
+}
+.info .inner .ttl {
+  border-bottom: 1px solid white;
+}
+
+.Gain p {
+  margin: 30px 30px 30px 0;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=main.css.map */
